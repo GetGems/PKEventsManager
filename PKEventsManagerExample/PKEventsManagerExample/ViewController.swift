@@ -17,5 +17,9 @@ class ViewController: UIViewController {
         
         EventManager.shared.initialize(token: "")
     }
+    
+    func reportEvent(with name:String, params:[String:String]) {
+        EventManager.shared.track(event: "", properties: params)
+    }
 }
 
