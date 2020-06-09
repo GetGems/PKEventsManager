@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PKEventsManager"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "A CocoaPods library written in Swift"
   spec.swift_version = "5.1"
   spec.ios.deployment_target = 10.0
