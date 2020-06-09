@@ -16,6 +16,8 @@
 		25307561248F60D900428160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2530755F248F60D900428160 /* Main.storyboard */; };
 		25307563248F60DA00428160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25307562248F60DA00428160 /* Assets.xcassets */; };
 		25307566248F60DB00428160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25307564248F60DA00428160 /* LaunchScreen.storyboard */; };
+		2530756D248F61F500428160 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530756B248F61F500428160 /* Reach.swift */; };
+		2530756E248F61F500428160 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530756C248F61F500428160 /* EventManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		25307562248F60DA00428160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25307565248F60DB00428160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25307567248F60DB00428160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2530756B248F61F500428160 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		2530756C248F61F500428160 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		2530753B248F60AB00428160 /* PKEventsManager */ = {
 			isa = PBXGroup;
 			children = (
+				2530756B248F61F500428160 /* Reach.swift */,
+				2530756C248F61F500428160 /* EventManager.swift */,
 				2530753C248F60AB00428160 /* PKEventsManager.h */,
 				2530753D248F60AB00428160 /* Info.plist */,
 			);
@@ -202,6 +208,7 @@
 				TargetAttributes = {
 					25307538248F60AB00428160 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					25307541248F60AB00428160 = {
 						CreatedOnToolsVersion = 11.5;
@@ -263,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2530756E248F61F500428160 /* EventManager.swift in Sources */,
+				2530756D248F61F500428160 /* Reach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +446,7 @@
 		2530754E248F60AB00428160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HVUD5U693H;
@@ -453,6 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paykey.paykeying.PKEventsManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +472,7 @@
 		2530754F248F60AB00428160 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HVUD5U693H;
@@ -485,6 +497,7 @@
 		25307551248F60AB00428160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVUD5U693H;
 				INFOPLIST_FILE = PKEventsManagerTests/Info.plist;
@@ -503,6 +516,7 @@
 		25307552248F60AB00428160 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVUD5U693H;
 				INFOPLIST_FILE = PKEventsManagerTests/Info.plist;
