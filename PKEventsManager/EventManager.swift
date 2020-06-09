@@ -8,12 +8,10 @@
 
 import Foundation
 import Mixpanel
-import KeyboardFramework
-
 
 @objc final public class EventManager: NSObject {
 
-    static let excludedEvents = [PK_ANALYTICS_KEY_PRESSED, PK_ANALYTICS_KEYBOARD_EVENT]
+    static let excludedEvents = ["key_pressed", "keyboard"]
     
     @objc public static let shared = EventManager()
 
