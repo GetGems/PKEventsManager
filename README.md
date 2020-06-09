@@ -1,2 +1,2 @@
 # PKEventsManager
-A CocoaPods library written in Swift 
+A CocoaPods library written in Swift For Paykey Clients
