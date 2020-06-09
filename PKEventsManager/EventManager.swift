@@ -19,15 +19,16 @@ import Mixpanel
         super.init()
     }
 
-    @objc public func track(event: String, properties: [String: Any]? = nil) {
+    @objc public func track(event: String, properties: [String: String]? = nil) {
         if !isInternetConnectionOn() {
             return
         }
         guard !EventManager.excludedEvents.contains(event) else {
             return
         }
-        print("[PayKey: Analytics *Sanitized*] \(event) : \(String(describing: properties as? Properties))/")
-        Mixpanel.mainInstance().track(event: event, properties: properties as? Properties)
+        print("[PayKey: Analytics *Sanitized*] \(event) : \(String(describing: properties))/")
+        
+        Mixpanel.mainInstance().track(event: event, properties: properties)
     }
     
     @objc public func initialize(token:String) {
