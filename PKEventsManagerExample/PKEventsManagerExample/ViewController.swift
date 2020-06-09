@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import PKEventsManager
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        EventManager.shared.initialize(token: "")
     }
-
-
 }
 

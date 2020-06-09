@@ -1,0 +1,22 @@
+PODS:
+  - Mixpanel-swift (2.7.3):
+    - Mixpanel-swift/Complete (= 2.7.3)
+  - Mixpanel-swift/Complete (2.7.3)
+  - PKEventsManager (1.0.3):
+    - Mixpanel-swift
+
+DEPENDENCIES:
+  - PKEventsManager
+
+SPEC REPOS:
+  trunk:
+    - Mixpanel-swift
+    - PKEventsManager
+
+SPEC CHECKSUMS:
+  Mixpanel-swift: 0624c84b0746e3434d5a286ca590bd5769625d28
+  PKEventsManager: 17b527579a7058aae0bf44353263aa712aed950f
+
+PODFILE CHECKSUM: 4cb635dfba7e229bf401bb7e7f1dd0ce3445be8d
+
+COCOAPODS: 1.8.4
