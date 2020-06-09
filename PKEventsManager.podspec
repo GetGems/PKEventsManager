@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PKEventsManager"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A CocoaPods library written in Swift"
   spec.swift_version = "5.1"
   spec.ios.deployment_target = 10.0
@@ -40,11 +40,7 @@ Pod::Spec.new do |spec|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-
-  #spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
